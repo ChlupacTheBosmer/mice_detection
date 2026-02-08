@@ -145,10 +145,10 @@ def main() -> None:
         'https://data.caltech.edu/records/4emt5-b0t10/files/CRIM13_train2.zip?download=1',
         'https://data.caltech.edu/records/4emt5-b0t10/files/CRIM13_validation.zip?download=1',
     ]
-    download_videos(VIDEO_URLS, dest_folder='downloaded_videos')
+    download_videos(VIDEO_URLS, dest_folder='/home/user1000/shared_data/mice/videos/')
     for dataset_url in DATASET_URLS:
         try:
-            download_file(dataset_url, dest_folder='downloaded_datasets')
+            download_file(dataset_url, dest_folder='/home/user1000/shared_data/mice/videos/')
         except requests.HTTPError as err:
             print(f"[ERROR] Failed to download dataset from {dataset_url}: {err}")
 
