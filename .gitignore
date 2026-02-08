@@ -1,0 +1,6 @@
+venv/
+downloaded_videos/
+downloaded_datasets/
+__pycache__/
+*.pyc
+.DS_Store
